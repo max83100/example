@@ -1,0 +1,14 @@
+// you don not need to understand how it works, ignore it
+class Pirate (name : String) {
+    var name: String = name
+        private set    
+}
+// Do not touch the lines above
+
+fun main() {
+    val captain = Pirate("Hector Barbossa")
+    println(captain.name)
+    val cap = Pirate("Jack Sparrow")
+    println(cap.name)
+
+}
