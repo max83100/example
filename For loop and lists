@@ -1,0 +1,14 @@
+fun main() {
+    var a = readln().toInt()
+    var b = 0
+    val mut: MutableList<Int> = mutableListOf()
+    for(i in 0 until a+1){
+        mut.add(readln().toInt())
+    }
+    for(i in 0 until mut.size){
+        if("${mut[i]}" == "${mut[mut.size-1]}"){
+            b += 1
+        }
+    }
+    println(b-1)
+}
