@@ -1,0 +1,5 @@
+fun main() {
+    var a = readln().toString().lowercase()
+    var b = readln().toString().lowercase()
+    println(a == b)
+}
