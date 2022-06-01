@@ -1,0 +1,5 @@
+fun main() {
+   var a = readln().toString()
+   println(a.last()-1)
+ 
+}
