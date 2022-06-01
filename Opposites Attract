@@ -1,0 +1,10 @@
+fun loveFun(flowerA: Int, flowerB: Int): Boolean {
+    var a = true
+  if(flowerA != flowerB){
+      a =  true
+  }
+  else{
+      a = false
+  }
+  return a
+}
