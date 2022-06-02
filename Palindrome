@@ -1,0 +1,10 @@
+fun main() {
+    var a = readln().toString()
+    if(a == a.reversed()){
+        println("yes")
+    }
+    else{
+        println("no")
+    }
+    
+}
