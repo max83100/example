@@ -1,0 +1,7 @@
+fun main() {
+    var a = readln()  
+    for(i in 0 until a.length){
+        print("${a[i]}"+"${a[i]}")
+    }
+    
+}
