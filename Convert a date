@@ -1,0 +1,5 @@
+fun main() {
+    var a = readln()
+    val list: List<String> = a.split("-")
+    println(list[1]+"/"+list[2]+"/"+list[0])
+}
