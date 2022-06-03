@@ -1,0 +1,13 @@
+fun main() {
+    var a = readln()  
+    var num = 0
+    var index = 0
+    val list: List<String> = a.split(" ")
+    for(i in 0 .. list.size-1){
+        if(list[i].length > num){
+           num =  list[i].length
+            index = i
+        }
+    }
+    println(list[index])
+}
