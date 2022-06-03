@@ -1,0 +1,4 @@
+fun main() {
+    val ALPHABET = "abcdefghijklmnopqrstuvwxyz"
+    println(ALPHABET.contains(readln()))
+}
