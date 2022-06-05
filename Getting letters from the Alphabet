@@ -1,0 +1,12 @@
+fun main() {
+    var a = readln().toString()
+    var b = "abcdefghijklmnopqrstuvwxyz"
+    var list: List<String> = b.split("")
+    for(i in 0 until list.size){
+       if(a == list[i]) {
+           break
+       }
+       print(list[i])
+    }
+  
+}
