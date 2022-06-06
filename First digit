@@ -1,0 +1,12 @@
+
+fun main() {
+    var a = readln().toString()
+    var b = ""
+    var list: List<String> = a.split("")
+    val result = a.filter { it.isDigit() }
+    var numb: List<String> = result.split("")
+    print(numb[1])
+    
+    
+    
+}
