@@ -1,0 +1,29 @@
+fun main() {
+  
+  
+  var s = Scanner(System.`in`)
+  while(s.hasNext()){
+    var a = s.nextLine()
+    
+
+ if(a == " "){
+   println(" ")
+ }
+ else if(a == "/exit"){
+   println("Bye!")
+   return
+ }
+ else if(!a.isEmpty()){
+   var list: List<String> = a.split(" ")
+   if(list.size == 1){
+     println(list[0])
+   }
+   else{
+   println(list[0].toInt()+list[1].toInt())
+   }
+ }
+ }
+  
+  
+
+}
