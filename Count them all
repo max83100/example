@@ -1,0 +1,34 @@
+import java.util.*
+
+
+fun main() {
+  
+  
+  var s = Scanner(System.`in`)
+  while(s.hasNext()){
+    var a = s.nextLine()
+ if(a == " "){
+   println(" ")
+ }
+ else if(a == "/exit"){
+   println("Bye!")
+   return
+ }
+ else if(a == "/help"){
+   println("The program calculates the sum of numbers")
+   }
+ else if(!a.isEmpty()){
+   var list: List<String> = a.split(" ")
+   if(list.size == 1){
+     println(list[0])
+   }
+   else{
+     var z = 0
+     for(i in 0 until list.size){ 
+        z +=list[i].toInt()
+     }
+     println(z)
+   }
+ }
+ }
+}
