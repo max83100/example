@@ -1,0 +1,13 @@
+package solution
+
+class SmallestIntegerFinder {
+
+  fun findSmallestInt(nums: List<Int>): Int {
+      var min = nums[0]
+      for(i in 0 until nums.size){
+          if(nums[i] < min){
+              min = nums[i]
+          }
+      }
+    return min 
+  }
