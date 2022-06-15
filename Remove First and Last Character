@@ -1,0 +1,8 @@
+fun removeChar(str: String): String {
+    var a  = ""
+    for(i in 1 until str.length-1){
+        a += str[i]
+    }
+  
+    return a
+}
