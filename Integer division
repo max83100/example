@@ -1,0 +1,24 @@
+fun intDivision(x: String, y: String): Int {
+    var a = 0
+    try {
+        if(x.toIntOrNull() != null && y.toIntOrNull() != null){
+            a =  x.toInt()/y.toInt()
+        }
+        else{
+           println("Read values are not integers.") 
+           a = 0
+        }
+    }
+    catch(e: ArithmeticException){
+        println("Exception: division by zero!")
+        a = 0
+    }
+    return a
+}
+
+fun main() {
+    val x = readLine()!!
+    val y = readLine()!!
+    println(intDivision(x, y))
+
+}
