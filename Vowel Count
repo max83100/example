@@ -1,0 +1,15 @@
+fun getCount(str : String) : Int {
+    val list: List<String> = str.split("")
+    val let = "a e i o u"
+    var a = 0
+    val vow: List<String> = let.split(" ")
+    for(i in 0 until list.size){
+        for(y in 0 until vow.size){
+            if(list[i]== vow[y]){
+                a += 1
+            }
+        }
+    }
+    
+  return a
+}
