@@ -1,0 +1,11 @@
+fun findShort(s: String): Int {
+    val list: List<String> = s.split(" ")
+    var min = list[0].length
+    for(i in 0 until list.size){
+        if(list[i].length < min){
+            min = list[i].length
+        }
+    }
+    return min
+    
+}
