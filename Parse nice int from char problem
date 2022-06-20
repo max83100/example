@@ -1,0 +1,12 @@
+package basic
+
+class ParseIntCharProblem {
+    
+   fun getAge(yearsOld: String): Int {
+       val li: List<String> = yearsOld.split(" ")
+        
+       return li[0].toInt()
+       
+   }
+    
+}
