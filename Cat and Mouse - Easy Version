@@ -1,0 +1,12 @@
+package catmouse
+
+fun catMouse(s: String): String {
+  var a = 0
+  val list: List<String> = s.split("")
+  for(i in 0 until list.size){
+      if(list[i] == "."){
+          a ++ 
+      }
+  }
+  return if(a > 3) "Escaped!" else "Caught!"
+}
