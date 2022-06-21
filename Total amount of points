@@ -1,0 +1,18 @@
+fun points(games: List<String>): Int {
+    // Enter the logic here!
+    var count = 0
+    for(i in 0 until games.size){
+        var a = games[i].split(":")
+        if(a[0]>a[1]){
+            count+= 3
+        }
+        else if(a[0]<a[1]){
+            count+= 0
+        }
+        else{
+            count+= 1
+        }
+    }
+    return count
+    
+}
