@@ -1,0 +1,18 @@
+fun twiceAsOld(dadYearsOld: Int, sonYearsOld: Int): Int {
+    
+    var a = 0
+   if(sonYearsOld < dadYearsOld){
+      a = dadYearsOld-(sonYearsOld*2)
+      
+  }
+ 
+  else if(sonYearsOld == 0){
+      a = dadYearsOld
+  }
+  else{
+      return 0
+  }
+   
+    return Math.abs(a)
+  
+}
