@@ -1,0 +1,9 @@
+fun prevMultOfThree(n: Int): Int? {
+    val s = n.toString()
+    for (i in s.indices) {
+        val num = s.dropLast(i).toInt()
+        if (num % 3 == 0) return num
+    }
+
+    return null
+}
