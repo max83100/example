@@ -1,0 +1,9 @@
+package com.codewars.a.partridge
+
+object DoubleSort {
+  fun dbSort(a:Array<Any>):Array<Any> {
+    val numberArray = a.filterIsInstance<Int>().sorted()
+            val stringArray = a.filterIsInstance<String>().sorted()
+            return (numberArray + stringArray).toTypedArray()
+  }
+}
