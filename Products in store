@@ -1,0 +1,9 @@
+fun bill(priceList: Map<String, Int>, shoppingList: MutableList<String>): Int {
+   var a = 0
+    for(i in 0..shoppingList.size-1){
+        for( (k,v) in priceList ){
+            if(shoppingList[i] == k) a += v
+        }
+    }
+    return a
+}
