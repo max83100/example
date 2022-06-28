@@ -1,0 +1,15 @@
+fun addUser(userMap: Map<String, String>, login: String, password: String): MutableMap<String, String> {
+    var list = mutableMapOf<String, String>()
+    list.putAll(userMap)
+    if(userMap.contains(login)){
+        println("User with this login is already registered!")
+        return list.toMutableMap()
+        
+    }
+    else{
+        list += login to password
+        return list.toMutableMap()
+    }
+    
+    
+}
