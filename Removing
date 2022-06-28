@@ -1,0 +1,11 @@
+fun removing(currentMap: MutableMap<Int, String>, value: String): MutableMap<Int, String> {
+    var l = currentMap.toMutableMap()
+    for(i in currentMap){
+        if(i.value == value)
+        l.remove(i.key)
+    }
+    
+
+    return l
+
+}
