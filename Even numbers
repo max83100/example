@@ -1,0 +1,8 @@
+fun solution(numbers: List<Int>) {
+    var a = ""
+    for(i in numbers){
+        if(i%2==0) a += i.toString() + " "
+        
+    }
+    println(a)
+}
