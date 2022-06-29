@@ -1,0 +1,7 @@
+fun solution(numbers: List<Int>): Int {
+    var a = 0
+    for(i in numbers){
+        a += i
+    }
+    return a
+}
