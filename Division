@@ -1,0 +1,7 @@
+fun main() {
+    val a = readln().toBigInteger()
+    val b = readln().toBigInteger()
+    val(res, rem) = a.divideAndRemainder(b)
+    println("$a = $b * $res + $rem")
+
+}
