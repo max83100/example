@@ -1,0 +1,6 @@
+fun main() {
+    val a = readln().toBigInteger()
+    val b = readln().toBigInteger()
+    val c = (a*b)/(a.gcd(b))
+    println("$c")
+}
