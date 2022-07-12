@@ -1,0 +1,8 @@
+package flashcards
+
+fun main() {
+    val a = readln().toString()
+    val b = readln().toString()
+    val c = readln().toString()
+    if(b == c) println("Your answer is right!") else println("Your answer is wrong...")
+}
