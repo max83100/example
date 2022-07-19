@@ -1,0 +1,27 @@
+package accum
+
+fun accum(s:String):String {
+     val a:List<String> = s.split("")
+    var b = ""
+    for(i in 0 until a.size-1){
+        if(i == 0){
+            b+= a[0].uppercase()
+        }
+        
+       else if(i == a.size-2){
+        
+        b += a[i].uppercase()
+        b += a[i].lowercase().repeat(i-1)
+            }
+        else{
+          b += a[i].uppercase()
+        b += a[i].lowercase().repeat(i-1)+"-"  
+        }
+            
+    }
+    var c:List<String> = b.split(" ")
+    
+    
+   return c.joinToString()
+    
+}
