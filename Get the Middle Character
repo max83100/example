@@ -1,0 +1,17 @@
+package middle
+
+fun getMiddle(word : String) : String {
+    var b = ""
+  val a: List<String> = word.split("")
+  if(word.length == 0){
+      b =  a[0]
+  }
+  else if(word.length % 2 == 0){
+      b =  a[word.length/2]+a[(word.length/2)+1]
+  }
+  else{
+      b = a[(word.length/2)+1]
+  }
+  return b
+    
+}
