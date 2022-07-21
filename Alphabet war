@@ -1,0 +1,29 @@
+fun alphabetWar(fight: String): String {
+   var left = 0
+    var right = 0
+    var answ = ""
+    val a: List<String> = fight.split("")
+    for(i in 0 until a.size){
+        when(a[i]){
+            "w" -> left += 4
+            "p" -> left += 3
+            "b" -> left += 2
+            "s" -> left += 1
+            "m" -> right += 4
+            "q" -> right += 3
+            "d" -> right += 2
+            "z" -> right += 1
+        }
+      
+    }
+     if( left > right){
+            answ = "Left side wins!"
+        }
+        else if( left < right){
+            answ = "Right side wins!"
+        }
+        else{
+            answ = "Let's fight again!"
+        }
+        return answ
+}
